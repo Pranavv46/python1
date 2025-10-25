@@ -1,21 +1,17 @@
-# Create a multiline string for the receipt header
-header = """\n\t--- BOOKSTORE RECEIPT ---
-\tName: Madison Bookstore
-\t-------------------------\n"""
+apple_juice = 15.5
+orange_juice = 20
+grape_juice = 10.25
 
-# Item details
-item1 = "Book Title: {} \tPrice: ₹{}".format("Python Basics", 450)
-item2 = "Book Title: {} \tPrice: ₹{}".format("Data Science Intro", 600)
+total_volume = apple_juice + orange_juice + grape_juice
 
-# Calculate total
-total_price = 450 + 600
-total_line = "Total Amount: ₹{}".format(total_price)
+print("Total volume sold:", total_volume, "liters")
 
-# Thank-you message
-thank_you = "\n\tThank you for shopping with us!\n"
+total_int = int(total_volume)
+print("Total volume (integer):", total_int, "liters")
 
-# Combine all parts
-receipt = header + item1 + "\n" + item2 + "\n" + total_line + thank_you
-
-# Display in uppercase
-print(receipt.upper())
+total_str = str(total_volume)
+print("The total volume sold today is " + total_str + " liters.")
+import random
+bonus = random.randint(5, 10)
+final_total = total_volume + bonus
+print("Final total including bonus:", final_total, "liters")
