@@ -15,3 +15,4 @@ import random
 bonus = random.randint(5, 10)
 final_total = total_volume + bonus
 print("Final total including bonus:", final_total, "liters")
+print (globals())
