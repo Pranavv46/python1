@@ -21,13 +21,17 @@ calc = calculator()
 
 while True:
 
+  oper = input("Enter operator (+, -, *, /) or 'exit' to quit :")
+
+  if oper.lower() == "exit":
+        print("_______________bye_______________")
+        break
+
   a = float(input("Enter first number :"))
   b = float(input("Enter second number :"))
-  oper = input("Enter operator (+, -, *, /) or 'exit' to quit :")
-  if oper =="exit":
-     print("_______________bye_______________")
-     break
-  elif oper == '+':
+ 
+  
+  if oper == '+':
     print("Result:", calc.add(a, b))
   elif oper == '-':
     print("Result:", calc.subtract(a, b))
