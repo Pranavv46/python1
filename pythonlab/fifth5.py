@@ -1,4 +1,4 @@
-#calculato using operator as input
+#calculator using operator as input
 
 class calculator:
     def add(self, a, b):
@@ -21,9 +21,9 @@ calc = calculator()
 
 while True:
 
-  oper = input("Enter operator (+, -, *, /) or 'exit' to quit :")
+  oper = input("Enter operator (+, -, *, /) or 'exit' to quit : ")
 
-  if oper.lower() == "exit":
+  if oper == "exit":
         print("_______________bye_______________")
         break
 
